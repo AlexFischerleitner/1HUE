@@ -30,6 +30,11 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
 
     @Override
     public void printPrimes() {
+         for(int i = 1;i<= this.maxP; i++){
+             if(isPrime(i)==true){
+                 System.out.println("i");
+             }
+         }
         
     }
     

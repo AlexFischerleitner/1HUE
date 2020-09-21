@@ -10,6 +10,27 @@ package pkg1hue;
  *
  * @author afischerleitner17
  */
-public class EratosthenesPrimeSieve {
+public class EratosthenesPrimeSieve implements PrimeSieve {
+    int maxP;
+    
+    public EratosthenesPrimeSieve(int maxP){
+        this.maxP = maxP;
+    }
+    
+    @Override
+    public boolean isPrime(int p) {
+        for(int i = 2; i<p;i++){
+            int rest = p%i;
+            if(rest== 0){
+                return false;
+            }
+        }
+        return true;    
+    }
+
+    @Override
+    public void printPrimes() {
+        
+    }
     
 }
